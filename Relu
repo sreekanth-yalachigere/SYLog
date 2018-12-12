@@ -1,0 +1,45 @@
+root@padma-cntk:/opt/PR12/onnxruntime/build/Linux/Release# ./onnxruntime_test_all --gtest_filter=ActivationOpTest.*
+Initializing unit testing.
+Note: Google Test filter = ActivationOpTest.*
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from ActivationOpTest
+[ RUN      ] ActivationOpTest.Sigmoid
+[       OK ] ActivationOpTest.Sigmoid (9 ms)
+[ RUN      ] ActivationOpTest.HardSigmoid
+[       OK ] ActivationOpTest.HardSigmoid (0 ms)
+[ RUN      ] ActivationOpTest.Tanh
+[       OK ] ActivationOpTest.Tanh (1 ms)
+[ RUN      ] ActivationOpTest.Relu
+mkldnn_verbose,exec,eltwise,jit:avx512_common,forward_inference,fdata:x fdiff:undef,alg:eltwise_relu,mb13ic0ih0iw0,0.62085
+[       OK ] ActivationOpTest.Relu (1 ms)
+[ RUN      ] ActivationOpTest.Elu
+[       OK ] ActivationOpTest.Elu (0 ms)
+[ RUN      ] ActivationOpTest.LeakyRelu
+[       OK ] ActivationOpTest.LeakyRelu (0 ms)
+[ RUN      ] ActivationOpTest.ThresholdedRelu
+[       OK ] ActivationOpTest.ThresholdedRelu (1 ms)
+[ RUN      ] ActivationOpTest.ScaledTanh
+[       OK ] ActivationOpTest.ScaledTanh (0 ms)
+[ RUN      ] ActivationOpTest.Selu
+[       OK ] ActivationOpTest.Selu (0 ms)
+[ RUN      ] ActivationOpTest.Selu_Attributes
+[       OK ] ActivationOpTest.Selu_Attributes (0 ms)
+[ RUN      ] ActivationOpTest.PRelu
+[       OK ] ActivationOpTest.PRelu (1 ms)
+[ RUN      ] ActivationOpTest.PRelu_SingleSlope
+[       OK ] ActivationOpTest.PRelu_SingleSlope (0 ms)
+[ RUN      ] ActivationOpTest.PRelu_MultiChannel
+[       OK ] ActivationOpTest.PRelu_MultiChannel (0 ms)
+[ RUN      ] ActivationOpTest.ParametricSoftplus
+[       OK ] ActivationOpTest.ParametricSoftplus (0 ms)
+[ RUN      ] ActivationOpTest.Softplus
+[       OK ] ActivationOpTest.Softplus (0 ms)
+[ RUN      ] ActivationOpTest.Softsign
+[       OK ] ActivationOpTest.Softsign (0 ms)
+[----------] 16 tests from ActivationOpTest (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (14 ms total)
+[  PASSED  ] 16 tests.
+root@padma-cntk:/opt/PR12/onnxruntime/build/Linux/Release#
